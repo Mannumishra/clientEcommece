@@ -33,7 +33,7 @@ const UpdateProfile = () => {
             formData.append("city", data.city)
             formData.append("state", data.state)
             formData.append("pic", data.pic)
-            let res = await axios.put("https://hapsserver.onrender.com/api/user/" + sessionStorage.getItem("userid"), formData)
+            let res = await axios.put("https://api.cl.assortsmachinetools.com/api/user/" + sessionStorage.getItem("userid"), formData)
             console.log(res)
             if (res.status === 200) {
                 toast.success("Profile Update successfully")
@@ -45,7 +45,7 @@ const UpdateProfile = () => {
     }
     const getAPIData = async () => {
         try {
-            let res = await axios.get("https://hapsserver.onrender.com/api/user/" + sessionStorage.getItem("userid"))
+            let res = await axios.get("https://api.cl.assortsmachinetools.com/api/user/" + sessionStorage.getItem("userid"))
             setData(res.data.data)
         } catch (error) {
             console.log(error);

@@ -10,7 +10,7 @@ const AllTags = () => {
 
     const getNewsletter = async () => {
         try {
-            const res = await axios.get("https://hapsserver.onrender.com/api/newsletter")
+            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/newsletter")
             const newData = res.data.data
             setData(newData.reverse())
         } catch (error) {

@@ -14,12 +14,12 @@ const EditOrder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://hapsserver.onrender.com/api/checkout/admin/${_id}`);
+        const response = await axios.get(`https://api.cl.assortsmachinetools.com/api/checkout/admin/${_id}`);
         console.log(response)
         setData(response.data.data);
         setOrderstatus(response.data.data.orderstatus);
         setPaymentstatus(response.data.data.paymentstatus);
-        const userResponse = await axios.get(`https://hapsserver.onrender.com/api/user/${response.data.data.userid}`);
+        const userResponse = await axios.get(`https://api.cl.assortsmachinetools.com/api/user/${response.data.data.userid}`);
         setUser(userResponse.data.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -38,7 +38,7 @@ const EditOrder = () => {
       setPaymentstatus(value)
   }
   const updateItem = async () => {
-    let res = await axios.put("https://hapsserver.onrender.com/api/checkout/admin/" + _id, { ...data, orderstatus: orderstatus, paymentstatus: paymentstatus })
+    let res = await axios.put("https://api.cl.assortsmachinetools.com/api/checkout/admin/" + _id, { ...data, orderstatus: orderstatus, paymentstatus: paymentstatus })
     if (res.status === 200) {
       navigate("/all-orders")
     }

@@ -19,7 +19,7 @@ const Profile = () => {
     useEffect(() => {
         const getApiData = async () => {
             try {
-                let res = await axios.get("https://hapsserver.onrender.com/api/user/" + sessionStorage.getItem("userid"));
+                let res = await axios.get("https://api.cl.assortsmachinetools.com/api/user/" + sessionStorage.getItem("userid"));
                 setUser(res.data.data);
                 console.log(res)
             } catch (error) {
@@ -29,7 +29,7 @@ const Profile = () => {
 
         const getOrderData = async () => {
             try {
-                let res = await axios.get("https://hapsserver.onrender.com/api/checkout/" + sessionStorage.getItem("userid"));
+                let res = await axios.get("https://api.cl.assortsmachinetools.com/api/checkout/" + sessionStorage.getItem("userid"));
                 const newData = res.data.data
                 setOrder(newData.reverse());
             } catch (error) {

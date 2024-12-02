@@ -14,7 +14,7 @@ const EditBanner = () => {
 
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://hapsserver.onrender.com/api/banner/" + _id)
+            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/banner/" + _id)
             setData(res.data.data)
             console.log(res)
         } catch (error) {
@@ -38,7 +38,7 @@ const EditBanner = () => {
         e.preventDefault()
         setBtnLoading(true)
         try {
-            const res = await axios.put("https://hapsserver.onrender.com/api/banner/" + _id, formData)
+            const res = await axios.put("https://api.cl.assortsmachinetools.com/api/banner/" + _id, formData)
             if(res.status===200){
                 toast.success("Banner Updated Successfully")
                 navigate("/all-banners")

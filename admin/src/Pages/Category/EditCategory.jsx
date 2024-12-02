@@ -15,7 +15,7 @@ const EditCategory = () => {
 
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://hapsserver.onrender.com/api/category/" + _id)
+            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category/" + _id)
             if (res.status === 200) {
                 setData(res.data.data)
             }
@@ -46,7 +46,7 @@ const EditCategory = () => {
         e.preventDefault()
         setBtnLoading(true)
         try {
-            const res = await axios.put("https://hapsserver.onrender.com/api/category/" + _id, formdata)
+            const res = await axios.put("https://api.cl.assortsmachinetools.com/api/category/" + _id, formdata)
             if (res.status === 200) {
                 setBtnLoading(false)
                 navigate("/all-category")

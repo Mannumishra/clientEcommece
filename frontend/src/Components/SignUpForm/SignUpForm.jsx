@@ -19,7 +19,7 @@ const SignUpForm = () => {
     const postData = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post("https://hapsserver.onrender.com/api/user", data)
+            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/user", data)
             if (res.status === 200) {
                 toast.success("Signup Successfully")
                 navigate("/login")

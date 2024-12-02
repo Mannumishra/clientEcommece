@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   const getBanner = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/banner");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/banner");
       setBanner(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -36,7 +36,7 @@ const Dashboard = () => {
 
   const getProduct = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/product");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/product");
       setProduct(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -45,7 +45,7 @@ const Dashboard = () => {
 
   const getOrder = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/checkout");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/checkout");
       const orderData = res.data.data;
       setOrder(orderData);
       const codfilter = orderData.filter((x) => x.paymentmode === "COD");
@@ -63,7 +63,7 @@ const Dashboard = () => {
 
   const getnewsletter = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/newsletter");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/newsletter");
       setNewsletter(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -72,7 +72,7 @@ const Dashboard = () => {
 
   const getcategory = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/category");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category");
       setCategory(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
   const getcontact = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/contact");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/contact");
       setContact(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -90,7 +90,7 @@ const Dashboard = () => {
 
   const getusers = async () => {
     try {
-      const res = await axios.get("https://hapsserver.onrender.com/api/user");
+      const res = await axios.get("https://api.cl.assortsmachinetools.com/api/user");
       setUsers(res.data.data);
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');

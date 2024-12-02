@@ -6,7 +6,7 @@ const AllUsers = () => {
 
     const getUserData = async () => {
         try {
-            const res = await axios.get("https://hapsserver.onrender.com/api/user")
+            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/user")
             console.log(res)
             const newData = res.data.data
             setUser(newData.reverse())

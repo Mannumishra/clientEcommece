@@ -13,7 +13,7 @@ export default function Checkout() {
 
     const getAPIData = async () => {
         try {
-            let res = await axios.get('https://hapsserver.onrender.com/api/user/' + sessionStorage.getItem("userid"));
+            let res = await axios.get('https://api.cl.assortsmachinetools.com/api/user/' + sessionStorage.getItem("userid"));
             setUser(res.data.data);
         } catch (error) {
             console.log(error);
@@ -22,7 +22,7 @@ export default function Checkout() {
 
     const getCartData = async () => {
         try {
-            let res = await axios.get('https://hapsserver.onrender.com/api/cart/' + sessionStorage.getItem("userid"));
+            let res = await axios.get('https://api.cl.assortsmachinetools.com/api/cart/' + sessionStorage.getItem("userid"));
             setCart(res.data.data);
             calculateTotal(res.data.data);
         } catch (error) {
@@ -53,22 +53,22 @@ export default function Checkout() {
             };
             try {
                 if (mode === "COD") {
-                    const res = await axios.post('https://hapsserver.onrender.com/api/checkout', item);
+                    const res = await axios.post('https://api.cl.assortsmachinetools.com/api/checkout', item);
                     console.log(res)
                     if (res.status === 200) {
                         toast.success("Order Place Successfully")
                         for (let items of cart) {
-                            let deleteItem = await axios.delete("https://hapsserver.onrender.com/api/cart/" + items._id)
+                            let deleteItem = await axios.delete("https://api.cl.assortsmachinetools.com/api/cart/" + items._id)
                             console.log(deleteItem);
                             setCart([]);
                         }
                     }
                 }
                 else {
-                    const res = await axios.post('https://hapsserver.onrender.com/api/checkout', item);
+                    const res = await axios.post('https://api.cl.assortsmachinetools.com/api/checkout', item);
                     if (res.data.success) {
                         for (let items of cart) {
-                            let deleteItem = await axios.delete("https://hapsserver.onrender.com/api/cart/" + items._id)
+                            let deleteItem = await axios.delete("https://api.cl.assortsmachinetools.com/api/cart/" + items._id)
                             console.log(deleteItem);
                             setCart([]);
                         }
@@ -81,7 +81,7 @@ export default function Checkout() {
                             description: `Payment For HAPS Product`,
                             image: "https://i.pinimg.com/originals/9e/ff/85/9eff85f9a3f9540bff61bbeffa0f6305.jpg",
                             order_id: order?.id,
-                            callback_url: `https://hapsserver.onrender.com/api/Payment-Verification`,
+                            callback_url: `https://api.cl.assortsmachinetools.com/api/Payment-Verification`,
                             prefill: {
                                 contact: user.phone
                             },

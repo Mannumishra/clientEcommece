@@ -30,7 +30,7 @@ const EditProduct = () => {
     useEffect(() => {
         const getCategoryData = async () => {
             try {
-                const res = await axios.get("https://hapsserver.onrender.com/api/category");
+                const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category");
                 if (res.status === 200) {
                     setCategory(res.data.data);
                 }
@@ -41,7 +41,7 @@ const EditProduct = () => {
 
         const getProductData = async () => {
             try {
-                const res = await axios.get(`https://hapsserver.onrender.com/api/product/${_id}`);
+                const res = await axios.get(`https://api.cl.assortsmachinetools.com/api/product/${_id}`);
                 if (res.status === 200) {
                     const product = res.data.data;
                     setData(product);
@@ -138,7 +138,7 @@ const EditProduct = () => {
         });
 
         try {
-            const res = await axios.put(`https://hapsserver.onrender.com/api/product/${_id}`, formData);
+            const res = await axios.put(`https://api.cl.assortsmachinetools.com/api/product/${_id}`, formData);
             if (res.status === 200) {
                 toast.success("Product updated successfully!");
                 navigate("/all-products");

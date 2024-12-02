@@ -23,7 +23,7 @@ const AddBanner = () => {
         e.preventDefault()
         setIsLoading(true)
         try {
-            let res = await axios.post("https://hapsserver.onrender.com/api/banner", formData)
+            let res = await axios.post("https://api.cl.assortsmachinetools.com/api/banner", formData)
             if (res.status === 200) {
                 toast.success("New Banner Added Successfully")
                 navigate("/all-banners")

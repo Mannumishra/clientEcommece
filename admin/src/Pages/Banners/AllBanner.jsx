@@ -12,7 +12,7 @@ const AllBanner = () => {
 
     const getBanner = async () => {
         try {
-            const res = await axios.get("https://hapsserver.onrender.com/api/banner");
+            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/banner");
             setData(res.data.data);
         } catch (error) {
             toast.error(error.response?.data?.message || 'An error occurred');
@@ -26,7 +26,7 @@ const AllBanner = () => {
     const deleteBanner = async (_id) => {
         setLoading(true);
         try {
-            const res = await axios.delete("https://hapsserver.onrender.com/api/banner/" + _id);
+            const res = await axios.delete("https://api.cl.assortsmachinetools.com/api/banner/" + _id);
             if (res.status === 200) {
                 toast.success("Banner deleted successfully");
                 setData(data.filter(item => item._id !== _id));
