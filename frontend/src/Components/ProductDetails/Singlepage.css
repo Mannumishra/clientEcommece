@@ -1,0 +1,304 @@
+.product-details-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rating-icon{
+color: orange;
+}
+.product-details-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.product-image-column {
+  /* flex: 1; */
+  /* min-width: 300px; */
+  width: 48%;
+}
+
+.image-carousel {
+  position: relative;
+}
+
+.carousel-slides {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+  flex: 1;
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-image {
+  width: 100%;
+  /* height: 400px; */
+  height: 500px;
+  /* object-fit: cover; */
+  cursor: pointer;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: orange;
+}
+
+.carousel-prev {
+  left: 30px;
+}
+
+.carousel-next {
+  right: 30px;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scrollbar-width: none;
+  margin-top: 10px;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail-image.active {
+  border-color: orange;
+}
+
+.product-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 48%;
+}
+
+.product-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Tenor Sans";
+  font-weight: 800;
+}
+
+.product-description {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.rating-icon {
+  font-size: 20px;
+}
+
+.rating-icon-empty {
+  font-size: 20px;
+}
+
+.rating-count {
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+.size-options {
+  display: flex;
+  gap: 20px;
+}
+
+.size-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.size-button.active {
+  background-color: blue;
+}
+
+.price-info {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Tenor Sans";
+  padding: 10px;
+}
+
+.original-price {
+  color: #333;
+}
+
+.current-price {
+  color: red;
+  font-size: 25px;
+}
+
+.product-accordion {
+  margin-top: 40px;
+}
+
+.accordion-title {
+  font-size: 25px;
+  opacity: 0.9;
+  font-weight: 800;
+}
+
+.quantity-control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.quantity-display {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-button,
+.buy-now-button {
+  cursor: pointer;
+  background-color: #90BC79;
+  border-color: #90BC79;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+.cart-button:hover,
+.buy-now-button:hover {
+  background-color: #90BC79;
+}
+
+/* @media (max-width: 768px) {
+  .carousel-image {
+    height: 200px !important;
+  }
+
+  .thumbnail-image {
+    height: 90px;
+  }
+} */
+
+/* Existing desktop styles remain unchanged */
+
+@media (max-width: 768px) {
+  .product-details-container {
+    padding: 10px;
+  }
+
+  .product-details-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-image-column,
+  .product-info-column {
+    width: 100%;
+  }
+
+  .carousel-image {
+    height: 300px !important;
+  }
+
+  .thumbnail-gallery {
+    gap: 5px;
+  }
+
+  .thumbnail-image {
+    height: 60px;
+    width: 60px;
+  }
+
+  .product-title {
+    font-size: 24px;
+  }
+
+  .product-description {
+    font-size: 14px;
+  }
+
+  .rating-icon {
+    font-size: 18px;
+  }
+
+  .rating-count {
+    font-size: 16px;
+  }
+
+  .size-options {
+    gap: 10px;
+  }
+
+  .price-info {
+    font-size: 18px;
+  }
+
+  .quantity-control {
+    gap: 5px;
+  }
+
+  .quantity-button {
+    padding: 5px;
+  }
+
+  .quantity-display {
+    font-size: 24px;
+  }
+
+  .cart-button,
+  .buy-now-button {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+

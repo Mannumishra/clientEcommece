@@ -1,0 +1,129 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 992px) {
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mb-5 {
+    margin-bottom: 3rem;
+  }
+  
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .items-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .items-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+  }
+  
+  .items-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  
+  .item-image {
+    width: 64px;
+    height: 64px;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-custom {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+  }
+  
+  .loading-text {
+    font-size: 1.25rem;
+  }
+  
+  @media (min-width: 992px) {
+    .d-none {
+      display: none;
+    }
+    
+    .d-lg-block {
+      display: block;
+    }
+  }
+  

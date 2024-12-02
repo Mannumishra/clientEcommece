@@ -1,0 +1,46 @@
+.checkoutheigth{
+    margin-top: 5px;
+}
+.checkoutpage{
+    display: flex !important;
+}
+.boxcheckout{
+    width: 48%;
+}
+/* Existing desktop styles remain unchanged */
+
+@media screen and (max-width: 768px) {
+    .checkoutheigth {
+        margin-top: 10px;
+    }
+
+    .checkoutpage {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boxcheckout {
+        width: 100%;
+    }
+
+    .boxcheckout table {
+        font-size: 14px;
+    }
+
+    .boxcheckout img {
+        height: 80px;
+    }
+
+    .boxcheckout select,
+    .boxcheckout .btn {
+        font-size: 14px;
+    }
+
+    .boxcheckout .table-responsive {
+        overflow-x: auto;
+    }
+
+    .boxcheckout h5 {
+        font-size: 16px;
+    }
+}
