@@ -43,12 +43,12 @@ const createRecord = async (req, res) => {
                     mailOptions = {
                         from: process.env.MAIL_SENDER,
                         to: data.email,
-                        subject: "Account is Created : Team HAPS",
+                        subject: "Account is Created : Team Indu enterprises",
                         text: `
                                 Hello ${data.name}
                                 Your Account is Successfully Created
                                 Now You Can Buy Our Latest Products with Great Deals
-                                Team : HAPS
+                                Team : Indu enterprises
                             `
                     }
                     transporter.sendMail(mailOptions, ((error) => {

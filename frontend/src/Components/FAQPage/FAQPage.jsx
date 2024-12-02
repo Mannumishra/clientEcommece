@@ -12,7 +12,7 @@ const FAQPage = () => {
     return (
         <div className="faq-page">
             <header className="faq-header">
-                <h1>HAPS FAQ Center</h1>
+                <h1>Indu enterprises FAQ Center</h1>
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
@@ -39,11 +39,11 @@ const FAQPage = () => {
                 </section>
                 <section className="contact-section">
                     <h2>Contact Us</h2>
-                    <p>If you have any other questions, feel free to contact us at <Link to="mailto:support@haps.com">support@haps.com</Link>.</p>
+                    <p>If you have any other questions, feel free to contact us at <Link to="mailto:support@Indu enterprises.com">support@Indu enterprises.com</Link>.</p>
                 </section>
             </main>
             <footer className="faq-footer">
-                <p>&copy; 2024 HAPS. All rights reserved.</p>
+                <p>&copy; 2024 Indu enterprises. All rights reserved.</p>
             </footer>
         </div>
     );

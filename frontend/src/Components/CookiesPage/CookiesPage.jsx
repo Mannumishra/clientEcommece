@@ -49,12 +49,12 @@ const CookiesPage = () => {
                 <section className="cookies-section">
                     <h2>Contact Us</h2>
                     <p>
-                        If you have any questions about our use of cookies, please contact us at <Link to="mailto:support@haps.com">support@haps.com</Link>.
+                        If you have any questions about our use of cookies, please contact us at <Link to="mailto:support@Indu enterprises.com">support@Indu enterprises.com</Link>.
                     </p>
                 </section>
             </main>
             <footer className="cookies-footer">
-                <p>&copy; 2024 HAPS. All rights reserved.</p>
+                <p>&copy; 2024 Indu enterprises. All rights reserved.</p>
             </footer>
         </div>
     );

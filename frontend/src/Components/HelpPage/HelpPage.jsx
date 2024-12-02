@@ -12,7 +12,7 @@ const HelpPage = () => {
     return (
         <div className="help-page">
             <header className="help-header">
-                <h1>HAPS Help Center</h1>
+                <h1>Indu enterprises Help Center</h1>
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
@@ -34,11 +34,11 @@ const HelpPage = () => {
                 </section>
                 <section className="contact">
                     <h5>Contact Us</h5>
-                    <p>If you have any other questions, feel free to contact us at <Link to="mailto:support@haps.com">support@haps.com</Link>.</p>
+                    <p>If you have any other questions, feel free to contact us at <Link to="mailto:support@Indu enterprises.com">support@Indu enterprises.com</Link>.</p>
                 </section>
             </main>
             <footer className="help-footer">
-                <p>&copy; 2024 HAPS. All rights reserved.</p>
+                <p>&copy; 2024 Indu enterprises. All rights reserved.</p>
             </footer>
         </div>
     );

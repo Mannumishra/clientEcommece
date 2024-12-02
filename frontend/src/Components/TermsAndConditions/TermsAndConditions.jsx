@@ -11,41 +11,41 @@ const TermsAndConditions = () => {
   return (
     <div className="terms-conditions-container">
       <div className="header">
-        <h1>Terms and Conditions for HAPS</h1>
+        <h1>Terms and Conditions for Indu enterprises</h1>
       </div>
 
       <div className="section">
         <h2>Introduction</h2>
         <p>
-          Welcome to HAPS. These terms and conditions outline the rules and regulations for the use of HAPS's Website.
+          Welcome to Indu enterprises. These terms and conditions outline the rules and regulations for the use of Indu enterprises's Website.
         </p>
       </div>
 
       <div className="section">
         <h2>Acceptance of Terms</h2>
         <p>
-          By accessing this website, we assume you accept these terms and conditions. Do not continue to use HAPS if you do not agree to all of the terms and conditions stated on this page.
+          By accessing this website, we assume you accept these terms and conditions. Do not continue to use Indu enterprises if you do not agree to all of the terms and conditions stated on this page.
         </p>
       </div>
 
       <div className="section">
         <h2>Cookies</h2>
         <p>
-          We employ the use of cookies. By accessing HAPS, you agreed to use cookies in agreement with the HAPS's Privacy Policy.
+          We employ the use of cookies. By accessing Indu enterprises, you agreed to use cookies in agreement with the Indu enterprises's Privacy Policy.
         </p>
       </div>
 
       <div className="section">
         <h2>License</h2>
         <p>
-          Unless otherwise stated, HAPS and/or its licensors own the intellectual property rights for all material on HAPS. All intellectual property rights are reserved. You may access this from HAPS for your own personal use subjected to restrictions set in these terms and conditions.
+          Unless otherwise stated, Indu enterprises and/or its licensors own the intellectual property rights for all material on Indu enterprises. All intellectual property rights are reserved. You may access this from Indu enterprises for your own personal use subjected to restrictions set in these terms and conditions.
         </p>
       </div>
 
       <div className="section">
         <h2>User Comments</h2>
         <p>
-          Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. HAPS does not filter, edit, publish or review Comments prior to their presence on the website.
+          Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Indu enterprises does not filter, edit, publish or review Comments prior to their presence on the website.
         </p>
       </div>
 

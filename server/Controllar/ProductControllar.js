@@ -73,7 +73,7 @@ const createRecord = async (req, res) => {
                 <p>Check it out now and enjoy our special offers!</p>
                 <a href="https://yourwebsite.com/product-page" style="display: inline-block; padding: 10px 20px; background-color: #28a745; color: #fff; text-decoration: none; border-radius: 5px; margin: 10px 0;">View Product</a>
                 <p>Best regards,</p>
-                <p>The HAPS Team</p>
+                <p>The Indu enterprises Team</p>
             </div>
         `
             };

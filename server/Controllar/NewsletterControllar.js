@@ -25,11 +25,11 @@ const createRecord = async (req, res) => {
             const sendMail = {
                 from: process.env.MAIL_SENDER,
                 to: data.email,
-                subject: "Welcome to HAPS Newsletter!",
+                subject: "Welcome to Indu enterprises Newsletter!",
                 text: `
                     Dear Subscriber,
             
-                    Thank you for subscribing to the HAPS newsletter! We're excited to have you on board.
+                    Thank you for subscribing to the Indu enterprises newsletter! We're excited to have you on board.
             
                     As a subscriber, you'll be the first to know about our latest products, exclusive deals, and special offers. Stay tuned for updates on our best-selling items and new arrivals.
             
@@ -38,7 +38,7 @@ const createRecord = async (req, res) => {
                     Happy shopping!
             
                     Best regards,
-                    The HAPS Team
+                    The Indu enterprises Team
                 `
             };
             transporter.sendMail(sendMail, ((error) => {

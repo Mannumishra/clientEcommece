@@ -1,119 +1,84 @@
-import React, { useEffect } from 'react'
-import Newsletter from '../Newsletter/Newsletter'
-import { Link } from 'react-router-dom'
-import image from '../../Images/1-removebg-preview.png'
+import React, { useEffect } from 'react';
+import Newsletter from '../Newsletter/Newsletter';
+import { Link } from 'react-router-dom';
+import image from '../../Images/feacture.avif';
 
 const About = () => {
-    const location = window.location.pathname
-    useEffect(()=>{
+    const location = window.location.pathname;
+    useEffect(() => {
         window.scrollTo({
-            top:0,
-            behavior:"smooth"
-        })
-    },[])
+            top: 0,
+            behavior: "smooth"
+        });
+    }, []);
     return (
         <>
-            {/* <!-- Hero Start --> */}
+            {/* Hero Start */}
             {
-                location === '/about' ? <div class="container-fluid bg-primary hero-header mb-5">
-                    <div class="container text-center">
-                        <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                            </ol>
-                        </nav>
+                location === '/about' ? (
+                    <div class="container-fluid bg-primary hero-header mb-5">
+                        <div class="container text-center">
+                            <h1 class="display-4 text-white mb-3 animated slideInDown">About Us</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                                </ol>
+                            </nav>
+                        </div>
                     </div>
-                </div> : null
+                ) : null
             }
-            {/* <!-- Hero End --> */}
+            {/* Hero End */}
 
-
-            {/* <!-- Feature Start --> */}
+            {/* Feature Start */}
             <div class="container-fluid py-5">
                 <div class="container">
-                    <div class="row g-4" >
-                        <div class="col-md-3 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-leaf fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">100% Natural</h5>
+                    <div class="row g-4">
+                        <div class="col-md-3 py-5 px-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                            <i class="fa fa-female fa-3x text-dark mb-4"></i>
+                            <h5 class="text-dark mb-0">Comfortable Fit</h5>
                         </div>
-                        <div className="col-md-3 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-tint-slash fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">Anti Hair Fall</h5>
+                        <div className="col-md-3 py-5 px-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                            <i class="fa fa-heart fa-3x text-dark mb-4"></i>
+                            <h5 class="text-dark mb-0">Skin-Friendly</h5>
                         </div>
-                        <div className="col-md-3 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-times fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">Hypoallergenic</h5>
+                        <div className="col-md-3 py-5 px-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                            <i class="fa fa-tags fa-3x text-dark mb-4"></i>
+                            <h5 class="text-dark mb-0">Affordable Styles</h5>
                         </div>
-                        <div class="col-md-3 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-leaf fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">FAD Approved</h5>
+                        <div class="col-md-3 py-5 px-3" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                            <i class="fa fa-check fa-3x text-dark mb-4"></i>
+                            <h5 class="text-dark mb-0">Quality Assured</h5>
                         </div>
-                        {/* <div className="col-md-2 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-tint-slash fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">Anti Hair Fall</h5>
-                        </div>
-                        <div className="col-md-2 py-5 px-3" style={{display:"flex",flexDirection:"column" ,justifyContent:"center" ,alignItems:"center"}}>
-                            <i class="fa fa-times fa-3x text-dark mb-4"></i>
-                            <h5 class="text-dark mb-0">Hypoallergenic</h5>
-                        </div> */}
-                        {/* <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="feature-item position-relative bg-primary text-center p-3">
-                        <div class="border py-5 px-3">
-                            <i class="fa fa-leaf fa-3x text-dark mb-4"></i>
-                            <h5 class="text-white mb-0">100% Natural</h5>
-                        </div>
-                    </div>
-                </div> */}
-                        {/* <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                            <div class="feature-item position-relative bg-primary text-center p-3">
-                                <div class="border py-5 px-3">
-                                    <i class="fa fa-tint-slash fa-3x text-dark mb-4"></i>
-                                    <h5 class="text-white mb-0">Anti Hair Fall</h5>
-                                </div>
-                            </div>
-                        </div> */}
-                        {/* <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="feature-item position-relative bg-primary text-center p-3">
-                                <div class="border py-5 px-3">
-                                    <i class="fa fa-times fa-3x text-dark mb-4"></i>
-                                    <h5 class="text-white mb-0">Hypoallergenic</h5>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>
-            {/* <!-- Feature End --> */}
+            {/* Feature End */}
 
-
-            {/* <!-- About Start --> */}
+            {/* About Start */}
             <div class="container-fluid">
                 <div class="container">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid animated pulse infinite" src={image} />
+                            <img class="img-fluid animated pulse infinite" src={image} alt="Comfort and Style" />
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                            <h1 class="text-primary mb-4">Healthy Hair <span class="fw-light text-dark">Is A Symbol Of Our
-                                Beauty</span></h1>
-                            <p class="mb-4">Healthy hair is a powerful symbol of beauty, reflecting our overall well-being and enhancing our self-confidence. It indicates good health, as nutrient deficiencies and stress often first appear in the condition of our hair.</p>
-                            <p class="mb-4"> Culturally, hair represents status and identity, with healthy hair providing a versatile medium for personal expression. </p>
-                            <p className="mb-4"> Maintaining healthy hair involves a balanced diet rich in essential vitamins and minerals, proper hair care routines, hydration, stress management, and regular trims. By nurturing our hair, we not only improve our appearance but also promote our overall health and vitality.</p>
+                            <h1 class="text-primary mb-4">Your Comfort <span class="fw-light text-dark">Is Our Priority</span></h1>
+                            <p class="mb-4">We understand that the right fit can make all the difference. Our range of bras, panties, and clothing is designed to provide unmatched comfort while keeping you stylish.</p>
+                            <p class="mb-4">From premium fabrics to designs that cater to every body type, we focus on delivering products that celebrate your uniqueness and ensure you feel confident every day.</p>
+                            <p className="mb-4">Our collections are crafted with care to suit your active lifestyle while maintaining elegance and quality. Because you deserve the best, inside and out.</p>
                             <Link class="btn btn-primary py-2 px-4" to="/product">Shop Now</Link>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <!-- About End --> */}
+            {/* About End */}
 
             {location === '/about' ? <Newsletter /> : null}
-
-
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

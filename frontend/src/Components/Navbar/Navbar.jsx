@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light p-0">
             <Link to="/" className="navbar-brand">
-              <h2 className="text-dark">HAPS</h2>
+              <h2 className="text-dark">Indu enterprises</h2>
             </Link>
             <button
               type="button"

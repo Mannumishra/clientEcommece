@@ -25,7 +25,7 @@ const Header = () => {
           <header>
             <div className="top-head">
               <div className="right">
-                <h2>HAPS</h2>
+                <h2>Indu enterprises</h2>
                 <div className="bar" onClick={handletoggleBtn}>
                   <i class="fa-solid fa-bars"></i>
                 </div>

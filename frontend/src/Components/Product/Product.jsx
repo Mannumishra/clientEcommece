@@ -14,7 +14,6 @@ const Product = () => {
     const getProductdata = async () => {
         try {
             const res = await axios.get("https://api.cl.assortsmachinetools.com/api/product")
-            console.log(res)
             setProduct(res.data.data)
             setFilteredProducts(res.data.data)
         } catch (error) {
@@ -58,11 +57,11 @@ const Product = () => {
             {
                 location === '/product' ? <div className="container-fluid bg-primary hero-header mb-5">
                     <div className="container text-center">
-                        <h1 className="display-4 text-white mb-3 animated slideInDown">Products</h1>
+                        <h1 className="display-4 text-white mb-3 animated slideInDown">Lingerie & Clothing</h1>
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb justify-content-center mb-0 animated slideInDown">
                                 <li className="breadcrumb-item"><a className="text-white" href="#">Home</a></li>
-                                <li className="breadcrumb-item"><a className="text-white" href="#">Pages</a></li>
+                                <li className="breadcrumb-item"><a className="text-white" href="#">Shop</a></li>
                                 <li className="breadcrumb-item text-white active" aria-current="page">Products</li>
                             </ol>
                         </nav>
@@ -71,15 +70,14 @@ const Product = () => {
             }
             {/* <!-- Hero End --> */}
 
-
             {/* <!-- Product Start --> */}
             {
                 location === '/product' ?
                     <div className="container-fluid py-5">
                         <div className="container">
                             <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ maxWidth: "600px" }}>
-                                <h1 className="text-primary mb-3"><span className="fw-light text-dark">Our Natural</span> Hair Products</h1>
-                                <p className="mb-5">Our natural hair products nourish and strengthen your hair, using organic ingredients for healthier, shinier, and more vibrant locks.</p>
+                                <h1 className="text-primary mb-3"><span className="fw-light text-dark">Explore Our</span> Lingerie & Clothing</h1>
+                                <p className="mb-5">Discover our premium range of bras, panties, and stylish outfits designed for comfort and elegance. Find your perfect fit today!</p>
                             </div>
                             <div className="row g-4">
                                 <div className="col-md-3">
@@ -110,7 +108,7 @@ const Product = () => {
                                         {filteredProducts.map((item, index) => (
                                             <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s" key={index}>
                                                 <div className="product-item text-center border h-100 p-4">
-                                                    <img className="img-fluid mb-4" src={item.productImage3} alt="" />
+                                                    <img className="img-fluid mb-4" src={item.productImage1} alt="" />
                                                     <h2 className="h6 d-inline-block mb-2">{item.productName}</h2>
                                                     <div className="mb-2">
                                                         <small className="fa fa-star text-warning"></small>
@@ -138,15 +136,15 @@ const Product = () => {
                     <div className="container-fluid py-5">
                         <div className="container">
                             <div className="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style={{ maxWidth: "600px" }}>
-                                <h1 className="text-primary mb-3"><span className="fw-light text-dark">Our Natural</span> Hair Products</h1>
-                                <p className="mb-5">Our natural hair products nourish and strengthen your hair, using organic ingredients for healthier, shinier, and more vibrant locks.</p>
+                                <h1 className="text-primary mb-3"><span className="fw-light text-dark">Explore Our</span> Lingerie & Clothing</h1>
+                                <p className="mb-5">Discover our premium range of bras, panties, and stylish outfits designed for comfort and elegance. Find your perfect fit today!</p>
                             </div>
                             <div className="row g-4">
                                 {
                                     product.map((item, index) =>
                                         <div className="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s" key={index}>
                                             <div className="product-item text-center border h-100 p-4">
-                                                <img className="img-fluid mb-4" src={item.productImage3} alt="" />
+                                                <img className="img-fluid mb-4" src={item.productImage1} alt="" />
                                                 <h2 className="h6 d-inline-block mb-2">{item.productName}</h2>
                                                 <div className="mb-2">
                                                     <small className="fa fa-star text-warning"></small>

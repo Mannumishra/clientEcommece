@@ -10,9 +10,9 @@ const Footer = () => {
             <div className="row g-5">
                 <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                     <a href="index.html" className="d-inline-block mb-3">
-                        <h1 className="text-primary">HAPS</h1>
+                        <h1 className="text-primary">Indu enterprises</h1>
                     </a>
-                    <p className="mb-0">Welcome to HAPS! Discover our premium oils, shampoos, and facewash products crafted to enhance your beauty and wellness routine. Quality you can trust, delivered to your door.</p>
+                    <p className="mb-0">Welcome to Indu enterprises! Discover our premium oils, shampoos, and facewash products crafted to enhance your beauty and wellness routine. Quality you can trust, delivered to your door.</p>
                 </div>
                 <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                     <h5 className="mb-4">Get In Touch</h5>
