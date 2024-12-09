@@ -19,7 +19,7 @@ const Contact = () => {
     const postData = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/contact", data);
+            const res = await axios.post("https://induserver.assortsmachinetools.com/api/contact", data);
             console.log(res);
             if (res.status === 200) {
                 toast.success(res.data.message);

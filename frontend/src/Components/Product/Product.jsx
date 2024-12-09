@@ -13,7 +13,7 @@ const Product = () => {
 
     const getProductdata = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/product")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/product")
             setProduct(res.data.data)
             setFilteredProducts(res.data.data)
         } catch (error) {
@@ -22,7 +22,7 @@ const Product = () => {
     }
     const getcategorydata = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/category")
             setCategories(res.data.data)
         } catch (error) {
             console.log(error)

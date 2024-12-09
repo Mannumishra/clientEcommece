@@ -10,7 +10,7 @@ const AllOrder = () => {
 
     const getAllorder = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/checkout")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/checkout")
             console.log(res)
             if (res.status === 200) {
                 const newData = res.data.data

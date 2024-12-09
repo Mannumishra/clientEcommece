@@ -10,7 +10,7 @@ const AllProduct = () => {
 
     const getProductData = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/product")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/product")
             console.log(res)
             if (res.status === 200) {
                 setData(res.data.data)
@@ -22,7 +22,7 @@ const AllProduct = () => {
 
     const deleteProduct = async (_id) => {
         try {
-            const res = await axios.delete("https://api.cl.assortsmachinetools.com/api/product/" + _id)
+            const res = await axios.delete("https://induserver.assortsmachinetools.com/api/product/" + _id)
             toast.success(res.data.message)
             getProductData()
         } catch (error) {

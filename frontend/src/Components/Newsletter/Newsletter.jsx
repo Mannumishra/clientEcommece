@@ -14,7 +14,7 @@ const Newsletter = () => {
     const postdata = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/newsletter", data);
+            const res = await axios.post("https://induserver.assortsmachinetools.com/api/newsletter", data);
             console.log(res);
             if (res.status === 200) {
                 toast.success(res.data.message);

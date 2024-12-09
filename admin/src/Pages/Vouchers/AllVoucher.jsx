@@ -8,7 +8,7 @@ const AllVoucher = () => {
 
     const getQuery = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/contact")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/contact")
             console.log(res)
             if (res.status === 200) {
                 const newData = res.data.data

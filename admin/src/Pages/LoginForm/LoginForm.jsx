@@ -17,7 +17,7 @@ const LoginForm = () => {
     const postData = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/user/login", data)
+            const res = await axios.post("https://induserver.assortsmachinetools.com/api/user/login", data)
             console.log(res)
             if (res.status === 200 && res.data.data.role === "Admin") {
                 toast.success("Login Successfully")

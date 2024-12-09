@@ -29,7 +29,7 @@ const AddProduct = () => {
     useEffect(() => {
         const getCategoryData = async () => {
             try {
-                const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category");
+                const res = await axios.get("https://induserver.assortsmachinetools.com/api/category");
                 if (res.status === 200) {
                     setCategory(res.data.data);
                 }
@@ -120,7 +120,7 @@ const AddProduct = () => {
         });
 
         try {
-            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/product", formData);
+            const res = await axios.post("https://induserver.assortsmachinetools.com/api/product", formData);
             if (res.status === 200) {
                 toast.success("Product added successfully!");
                 navigate("/all-products")

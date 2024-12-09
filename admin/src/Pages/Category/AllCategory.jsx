@@ -10,7 +10,7 @@ const AllCategory = () => {
     const [loading, setLoading] = useState(false)
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://api.cl.assortsmachinetools.com/api/category")
+            const res = await axios.get("https://induserver.assortsmachinetools.com/api/category")
             if (res.status === 200) {
                 const newData = res.data.data
                 setData(newData.reverse())
@@ -26,7 +26,7 @@ const AllCategory = () => {
     const deleteRecord = async (_id) => {
         setLoading(true)
         try {
-            const res = await axios.delete("https://api.cl.assortsmachinetools.com/api/category/" + _id)
+            const res = await axios.delete("https://induserver.assortsmachinetools.com/api/category/" + _id)
             if (res.status === 200) {
                 toast.success("Category Delete Successfully")
                 getApiData()

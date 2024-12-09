@@ -29,7 +29,7 @@ const SinglePage = () => {
 
    const getsingleProductData = async () => {
     try {
-        let res = await axios.get("https://api.cl.assortsmachinetools.com/api/product/" + _id);
+        let res = await axios.get("https://induserver.assortsmachinetools.com/api/product/" + _id);
         console.log(res);
         setSingleData(res.data.data);
         const imageKeys = Object.keys(res.data.data).filter(key => key.startsWith('productImage'));
@@ -78,7 +78,7 @@ const SinglePage = () => {
           image: singleData.productImage1
         };
         if (newItem.quantity > 0 && loginvalue === "true") {
-          let res = await axios.post('https://api.cl.assortsmachinetools.com/api/cart', newItem);
+          let res = await axios.post('https://induserver.assortsmachinetools.com/api/cart', newItem);
           if (res.status === 200) {
             toast.success("Product Added to cart");
             navigate("/cart");

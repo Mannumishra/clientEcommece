@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   const getBanner= async()=>{
     try {
-      let res = await axios.get("https://api.cl.assortsmachinetools.com/api/banner")
+      let res = await axios.get("https://induserver.assortsmachinetools.com/api/banner")
       console.log(res)
       setBanner(res.data.data)
     } catch (error) {

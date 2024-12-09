@@ -28,7 +28,7 @@ const AddCategory = () => {
         e.preventDefault()
         setIsloding(true)
         try {
-            const res = await axios.post("https://api.cl.assortsmachinetools.com/api/category", formData)
+            const res = await axios.post("https://induserver.assortsmachinetools.com/api/category", formData)
             console.log(res)
             if (res.status === 200) {
                 toast.success("New Category Addedd Successfully")
